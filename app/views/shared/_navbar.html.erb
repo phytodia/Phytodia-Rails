@@ -1,0 +1,13 @@
+<ul id="nav-translate">
+  <div>
+  <% I18n.available_locales.each do |locale| %>
+    <% if I18n.locale == locale %>
+      <li>
+        <%= link_to t(".lang.#{locale}"), url_for(locale: locale), class:"active-lang" %>
+      </li>
+    <% else %>
+    <%= link_to t(".lang.#{locale}"), url_for(locale: locale) %>
+    <% end %>
+  <% end %>
+  </div>
+</ul>
