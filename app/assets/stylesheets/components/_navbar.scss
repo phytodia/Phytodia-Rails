@@ -1,0 +1,21 @@
+#nav-translate {
+  background-color: $green;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  div:first-of-type {
+    max-width: 1920px;
+    border: solid 1px red;
+    display: flex;
+    margin: auto;
+    justify-content: end;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  a {
+    color: grey;
+    &.active-lang {
+      color: white;
+    }
+  }
+}
