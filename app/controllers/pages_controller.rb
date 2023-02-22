@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   def home
+    flash[:notice] = t(:hello_flash)
   end
 
   def plantes
