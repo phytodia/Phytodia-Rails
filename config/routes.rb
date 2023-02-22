@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   scope "/:locale" do
+    devise_for :users
     root to: "pages#home"
 
     get "/laboratoire-plantes", to: "pages#plantes"

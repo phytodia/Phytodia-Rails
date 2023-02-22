@@ -2,3 +2,6 @@
 <p><%= flash[:notice] %></p>
 <p>Find me in app/views/pages/home.html.erb</p>
 <h2>Ressource i18n : https://www.honeybadger.io/blog/rails-i18n/</h2>
+<% if !current_user.nil? %>
+  <p><%= current_user.email %></p>
+<% end %>
