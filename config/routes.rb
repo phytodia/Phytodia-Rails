@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   scope "/:locale" do
-    root "pages#home"
+    root to: "pages#home"
 
     get "/laboratoire-plantes", to: "pages#plantes"
     get "/laboratoire-analyse-recherche-developpement", to: "pages#analyses"
