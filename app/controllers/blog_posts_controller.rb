@@ -8,9 +8,13 @@ class BlogPostsController < ApplicationController
   end
 
   def new
+    @post = BlogPost.new
   end
 
   def create
+    @post = BlogPost.new(post_params)
+    @post.save
+    redirect_to @post
   end
 
   def edit
@@ -21,4 +25,9 @@ class BlogPostsController < ApplicationController
 
   def destroy
   end
+
+  def post_params
+    params.require(:blog_post).permit(:titre, :body)
+  end
+
 end
