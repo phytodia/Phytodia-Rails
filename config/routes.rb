@@ -11,8 +11,9 @@ Rails.application.routes.draw do
     get "/laboratoire-creation-cosmetique", to: "pages#cosmetologie"
     get "/nos-marques-actifs", to: "pages#marques"
     get "/a-propos", to: "pages#propos"
-    get "/blog", to: "pages#blog"
     get "/contact", to: "pages#contact"
+
+    resources :blog_posts, path: "blog"
 
     get "/admin", to: "admin#index"
 
