@@ -12,7 +12,10 @@ Rails.application.routes.draw do
     get "/nos-marques-actifs", to: "pages#marques"
     get "/a-propos", to: "pages#propos"
     get "/blog", to: "pages#blog"
-    get "contact", to: "pages#contact"
+    get "/contact", to: "pages#contact"
+
+    get "/admin", to: "admin#index"
+
   end
 
 end

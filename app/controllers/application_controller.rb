@@ -11,6 +11,12 @@ class ApplicationController < ActionController::Base
     { locale: I18n.locale }
   end
 
+  # Devise - redirection après sign in
+  def after_sign_in_path_for(resource)
+    stored_location_for(resource) || admin_path
+  end
+  # Fin Devise
+
   private
 
     def set_locale
