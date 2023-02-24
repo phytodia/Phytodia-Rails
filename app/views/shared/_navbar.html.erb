@@ -13,30 +13,33 @@
   </div>
 </ul>
 <nav id="nav-main">
+<div>
 <%= image_tag "logo-phytodia.png" %>
 <ul>
-<%= link_to laboratoire_plantes_path do %>
-  <li>Laboratoire des plantes</li>
-<% end %>
-<%= link_to laboratoire_analyse_recherche_developpement_path do %>
-  <li>Analyse et R&D</li>
-<% end %>
-<%= link_to laboratoire_creation_cosmetique_path do %>
-  <li>Cosmétologie</li>
-<% end %>
-<%= link_to nos_marques_actifs_path do %>
-  <li>Nos actis & marques</li>
-<% end %>
-<%= link_to a_propos_path do %>
-  <li>A propos</li>
-<% end %>
-<%= link_to blog_posts_path do %>
-  <li>Blog</li>
-<% end %>
-<%= link_to contact_path do %>
-  <li>Contact</li>
-<% end %>
+  <li class="nav-item-main"><a href="/">Laboratoire des plantes</a>
+    <ul class="submenu">
+        <li>Analyse des molécules végétales</li>
+        <li>Mise en conformité règlementaire</li>
+        <li>Analyse de tout type de plante</li>
+
+        <li>Extraction végétale</li>
+        <li>Développement d'actifs & extraits</li>
+        <li>Analyse & Conseil</li>
+
+        <li>Façonnage d'extraits végétaux</li>
+        <li>Full caractérisation</li>
+        <li>Nos autres prestations</li>
+    </ul>
+  </li>
+
+  <li><a href="/">Analyse et R&D</a></li>
+  <li><a href="/">Cosmétologie</a></li>
+  <li><a href="">Nos actis & marques</a></li>
+  <li><a href="">A propos</a></li>
+  <li><a href="">Blog</a></li>
+  <li><a href="">Contact</a></li>
 </ul>
+</div>
 </nav>
 <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete},
   class: "dropdown-item" %>
