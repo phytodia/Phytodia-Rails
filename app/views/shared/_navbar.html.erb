@@ -14,9 +14,11 @@
 <div id="head-nav">
   <div id="nav-primary">
     <nav role="navigation" class="primary-navigation">
+    <%= link_to root_path do %>
     <%= image_tag "logo-phytodia.png" %>
+    <% end %>
   <ul>
-    <li class="nav-head"><a href="#">Laboratoire des plantes</a>
+    <li class="nav-head"><%= link_to  t('links.labo_plantes'), laboratoire_plantes_path %>
       <ul class="dropdown" style="columns: 2;">
         <li><a href="#">Analyse des molécules végétales</a></li>
         <li><a href="#">Mise en conformité règlementaire</a></li>
@@ -29,7 +31,7 @@
         <li><a href="#">Nos autres prestations</a></li>
       </ul>
     </li>
-    <li class="nav-head"><a href="/">Analyse et R&D</a>
+    <li class="nav-head"><%= link_to  t('links.labo_rd'), laboratoire_analyse_recherche_developpement_path %>
       <ul class="dropdown" style="columns: 2;">
         <li><a href="#">Création d'extrait innovant</a></li>
         <li><a href="#">Développement d'un extrait premium</a></li>
@@ -42,7 +44,7 @@
         <li><a href="#">Nos autres prestations</a></li>
       </ul>
     </li>
-    <li class="nav-head"><a href="/">Cosmétologie</a>
+    <li class="nav-head"><%= link_to  t('links.labo_crea_cosme'), laboratoire_creation_cosmetique_path %>
       <ul class="dropdown" style="columns: 2;">
         <li><a href="#">Formulation cosmétique</a></li>
         <li><a href="#">Façonnage en petite quantité</a></li>
@@ -50,12 +52,12 @@
         <li><a href="#">Nos autres prestations</a></li>
       </ul>
     </li>
-    <li class="nav-head"><a href="">Nos actis & marques</a>
+    <li class="nav-head"><%= link_to t('links.marques_actifs'),nos_marques_actifs_path %>
     </li>
-    <li class="nav-head"><a href="">A propos</a>
+    <li class="nav-head"><%= link_to t('links.propos'),a_propos_path %>
     </li>
-    <li class="nav-head"><a href="">Blog</a></li>
-    <li class="nav-head"><a href="">Contact</a></li>
+    <li class="nav-head"><%= link_to t('links.blog'),blog_posts_path %></li>
+    <li class="nav-head"><%= link_to t('links.contact'),contact_path %></li>
     </ul>
     </nav>
   </div>

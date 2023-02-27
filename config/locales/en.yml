@@ -32,3 +32,10 @@
 en:
   hello: "Hello world"
   hello_flash: "flash English"
+  links:
+    labo_plantes: "Laboratory of plants"
+    labo_rd: "Analysis and R&D"
+    labo_crea_cosme: "Cosmetology"
+    propos: "About"
+    blog: "Blog"
+    contact: "Contact us"
