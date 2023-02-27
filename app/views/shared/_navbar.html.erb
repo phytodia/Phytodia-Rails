@@ -1,4 +1,3 @@
-
 <ul id="nav-translate">
   <div>
   <% I18n.available_locales.each do |locale| %>
@@ -12,42 +11,50 @@
   <% end %>
   </div>
 </ul>
-<nav id="nav-main">
-<div>
-<%= image_tag "logo-phytodia.png" %>
-<ul>
-  <li class="nav-item-main"><a href="/">Laboratoire des plantes</a>
-    <ul class="submenu">
-        <li>Analyse des molécules végétales</li>
-        <li>Mise en conformité règlementaire</li>
-        <li>Analyse de tout type de plante</li>
-
-        <li>Extraction végétale</li>
-        <li>Développement d'actifs & extraits</li>
-        <li>Analyse & Conseil</li>
-
-        <li>Façonnage d'extraits végétaux</li>
-        <li>Full caractérisation</li>
-        <li>Nos autres prestations</li>
-    </ul>
-  </li>
-
-  <li><a href="/">Analyse et R&D</a></li>
-  <li><a href="/">Cosmétologie</a></li>
-  <li><a href="">Nos actis & marques</a></li>
-  <li><a href="">A propos</a></li>
-  <li><a href="">Blog</a></li>
-  <li><a href="">Contact</a></li>
-</ul>
-</div>
+<div id="nav-primary">
+<nav role="navigation" class="primary-navigation">
+  <%= image_tag "logo-phytodia.png" %>
+  <ul>
+    <li class="nav-head"><a href="#">Laboratoire des plantes</a>
+      <ul class="dropdown" style="columns: 2;">
+        <li><a href="#">Analyse des molécules végétales</a></li>
+        <li><a href="#">Mise en conformité règlementaire</a></li>
+        <li><a href="#">Analyse de tout type de plante</a></li>
+        <li><a href="#">Extraction végétale</a></li>
+        <li><a href="#">Développement d'actifs & extraits</a></li>
+        <li><a href="#">Analyse & Conseil</a></li>
+        <li><a href="#">Façonnage d'extraits végétaux</a></li>
+        <li><a href="#">Full caractérisation</a></li>
+        <li><a href="#">Nos autres prestations</a></li>
+      </ul>
+    </li>
+    <li class="nav-head"><a href="/">Analyse et R&D</a>
+      <ul class="dropdown" style="columns: 2;">
+        <li><a href="#">Création d'extrait innovant</a></li>
+        <li><a href="#">Développement d'un extrait premium</a></li>
+        <li><a href="#">Analyse des produits cosmétiques</a></li>
+        <li><a href="#">Laboratoire de chimie analytique</a></li>
+        <li><a href="#">Laboratoire de développement analytique</a></li>
+        <li><a href="#">Analyse atypique</a></li>
+        <li><a href="#">Conseil & développement produit</a></li>
+        <li><a href="#">Analyse substances indésirables</a></li>
+        <li><a href="#">Nos autres prestations</a></li>
+      </ul>
+    </li>
+    <li class="nav-head"><a href="/">Cosmétologie</a>
+      <ul class="dropdown" style="columns: 2;">
+        <li><a href="#">Formulation cosmétique</a></li>
+        <li><a href="#">Façonnage en petite quantité</a></li>
+        <li><a href="#">Certification & labellisation</a></li>
+        <li><a href="#">Nos autres prestations</a></li>
+      </ul>
+    </li>
+    <li class="nav-head"><a href="">Nos actis & marques</a>
+    </li>
+    <li class="nav-head"><a href="">A propos</a>
+    </li>
+    <li class="nav-head"><a href="">Blog</a></li>
+    <li class="nav-head"><a href="">Contact</a></li>
+  </ul>
 </nav>
-<div class="sub-menu">
-<ul class="sub-item">
-<li>fgrege</li>
-</ul>
 </div>
-
-
-<%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete},
-  class: "dropdown-item" %>
-<%= link_to "Se connecter",  new_user_session_path %>
