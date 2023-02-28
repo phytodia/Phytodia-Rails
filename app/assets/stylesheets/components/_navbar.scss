@@ -19,9 +19,19 @@
   }
 }
 #head-nav {
-
+  //border: solid 3px red;
+  position: relative;
+.sub-nav {
+  //border: solid 2px blue;
+  background: linear-gradient(180deg, #246829 34.42%, #40B0A5 129.87%);
+  height: 250px;
+  width: 100%;
+  position: absolute;
+  visibility: hidden;
+}
 #nav-primary {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 10;
   //border: solid 1px;
 nav {
   &.primary-navigation {
@@ -72,8 +82,9 @@ nav {
 padding-left: 0;
       left: 0;
       display: none;
-      //max-height: 300px;
-      background: linear-gradient(180deg, #246829 34.42%, #40B0A5 129.87%);
+      max-height: 240px;
+      z-index: 999;
+      //background: linear-gradient(180deg, #246829 34.42%, #40B0A5 129.87%);
     }
 
     ul li:hover > ul,
@@ -109,15 +120,17 @@ padding-left: 0;
 
     ul li ul li a:hover {
     }
-  }
-  .nav-head {
-    &:hover {
-      color: white;
-      cursor: pointer;
-      background-color: $green;
-      a {color: white;}
+
+    .nav-head, ul li {
+      &:hover {
+        color: white;
+        cursor: pointer;
+        background-color: $green;
+        a {color: white;}
+      }
     }
   }
+
 }
 
  ul li ul li a { transition: all 0.5s ease; }
