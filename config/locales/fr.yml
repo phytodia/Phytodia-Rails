@@ -1,3 +1,11 @@
 fr:
   hello: "Bonjour Monde"
   hello_flash: "flash Français"
+  links:
+    labo_plantes: "Laboratoire des plantes"
+    labo_rd: "Analyse et R&D"
+    labo_crea_cosme: "Cosmétologie"
+    marques_actifs: "Nos marques & actifs"
+    propos: "A propos"
+    blog: "Blog"
+    contact: "Contact"
