@@ -5,3 +5,11 @@
 <% if !current_user.nil? %>
   <p><%= current_user.email %></p>
 <% end %>
+
+<h2>FAQ</h2>
+<% @faq.each do |ask| %>
+  <details>
+    <summary><%= ask["question"] %></summary>
+    <p><%= ask["answer"]%></p>
+  </details>
+<% end %>

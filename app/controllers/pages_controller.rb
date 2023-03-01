@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
   def home
     flash[:notice] = t(:hello_flash)
+    @faq = YAML.load_file('config/faq_fr.yml')
   end
 
   def plantes
