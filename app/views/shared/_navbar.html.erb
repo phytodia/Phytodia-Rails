@@ -11,7 +11,7 @@
   <% end %>
   </div>
 </ul>
-<div id="head-nav">
+<div id="head-nav" data-controller="navbar">
   <div id="nav-primary">
     <nav role="navigation" class="primary-navigation">
     <%= link_to root_path do %>
@@ -52,18 +52,21 @@
         <li><a href="#">Nos autres prestations</a></li>
       </ul>
     </li>
-    <li class="nav-head"><%= link_to t('links.marques_actifs'),nos_marques_actifs_path %>
+    <li class=""><%= link_to t('links.marques_actifs'),nos_marques_actifs_path %>
     </li>
-    <li class="nav-head"><%= link_to t('links.propos'),a_propos_path %>
+    <li class=""><%= link_to t('links.propos'),a_propos_path %>
     </li>
-    <li class="nav-head"><%= link_to t('links.blog'),blog_posts_path %></li>
-    <li class="nav-head"><%= link_to t('links.contact'),contact_path %></li>
+    <li class=""><%= link_to t('links.blog'),blog_posts_path %></li>
+    <li class=""><%= link_to t('links.contact'),contact_path %></li>
     </ul>
     </nav>
   </div>
 <!--
 <div id="sub-nav-bg"></div>
 -->
+<div class="sub-nav">
+<h1>Test</h1>
+</div>
 </div>
 <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete},
   class: "dropdown-item" %>
