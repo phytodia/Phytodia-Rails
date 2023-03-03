@@ -14,6 +14,7 @@ Rails.application.routes.draw do
     get "/contact", to: "pages#contact"
 
     resources :blog_posts, path: "blog"
+    resources :messages
 
     get "/admin", to: "admin#index"
 

@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  object: MyString
+  content: MyText
+  firstname: MyString
+  lastname: MyString
+  email: MyString
+  tel: MyString
+  date: 2023-03-03 14:34:06
+
+two:
+  object: MyString
+  content: MyText
+  firstname: MyString
+  lastname: MyString
+  email: MyString
+  tel: MyString
+  date: 2023-03-03 14:34:06

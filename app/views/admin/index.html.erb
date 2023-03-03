@@ -1,2 +1,13 @@
 <h1>Admin index</h1>
 <p>Bonjour <%= @user.email %></p>
+<h2>Derniers messages</h2>
+<% @messages.each do |mess| %>
+<details>
+    <summary><p><%= mess.lastname %> <%= mess.firstname %></p></summary>
+    <ul>
+    <li><%= mess.content %></li>
+    <li><%= mess.email %></li>
+    </ul>
+</details>
+
+<% end %>

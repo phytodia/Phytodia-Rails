@@ -11,4 +11,5 @@ eagerLoadControllersFrom("controllers", application)
 // lazyLoadControllersFrom("controllers", application)
 
 import NavbarController from "./navbar_controller.js"
+import FormController from "./form_controller.js"
 //application.register("navbar", NavbarController)

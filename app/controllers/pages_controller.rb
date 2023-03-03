@@ -17,5 +17,6 @@ class PagesController < ApplicationController
   def blog
   end
   def contact
+    @message = Message.new
   end
 end
