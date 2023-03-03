@@ -1,11 +1,11 @@
 <h1>Contact</h1>
 
-<%= simple_form_for :user, :url => '/users',data: { controller: 'form' } do |f| %>
+<%= simple_form_for @message,data: { controller: 'form' } do |f| %>
   <%= f.input :lastname %>
   <%= f.input :firstname %>
   <%= f.input :email %>
   <%= f.input :tel %>
-  <%= f.input :description, as: :text %>
-  <%= f.input :accepts, as: :radio_buttons %>
+  <%= f.input :content, as: :text %>
+
   <%= f.button :submit, class: "btn" %>
 <% end %>
