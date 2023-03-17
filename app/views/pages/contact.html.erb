@@ -1,11 +1,13 @@
 <h1>Contact</h1>
-
+<div data-controller="form">
 <%= simple_form_for @message,data: { controller: 'form' } do |f| %>
   <%= f.input :lastname %>
   <%= f.input :firstname %>
   <%= f.input :email %>
   <%= f.input :tel %>
+  <%= f.input :object, collection: ["analyse","Stage","Emploi"], prompt:"Votre demande",input_html: { data: { action: 'form#select' } }%>
   <%= f.input :content, as: :text %>
 
   <%= f.button :submit, class: "btn" %>
 <% end %>
+</div>
